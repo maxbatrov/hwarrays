@@ -37,7 +37,7 @@ public class StatSaleServiceTest {
 
         long[] sale = {152, 233, 374, 459, 561, 672, 785, 897, 105, 112, 321, 345};
 
-        long expectedMax = 8;
+        int expectedMax = 8;
         long actualMax = service.maxSumSales(sale);
 
         Assertions.assertEquals(expectedMax, actualMax);
@@ -49,7 +49,7 @@ public class StatSaleServiceTest {
 
         long[] sale = {152, 233, 374, 459, 561, 672, 785, 897, 105, 112, 321, 345};
 
-        long expectedMin = 9;
+        int expectedMin = 9;
         long actualMin = service.minSumSales(sale);
 
         Assertions.assertEquals(expectedMin, actualMin);
@@ -61,7 +61,7 @@ public class StatSaleServiceTest {
 
         long[] sale = {152, 233, 374, 459, 561, 672, 785, 897, 105, 112, 321, 345};
 
-        long expectedLessAvrg = 7;
+        int expectedLessAvrg = 7;
         long actualLessAvrg = service.lessSumAverage(sale);
 
         Assertions.assertEquals(expectedLessAvrg, actualLessAvrg);
@@ -74,13 +74,11 @@ public class StatSaleServiceTest {
 
         long[] sale = {152, 233, 374, 459, 561, 672, 785, 897, 105, 112, 321, 345};
 
-        long expectedHighAvrg = 5;
+        int expectedHighAvrg = 5;
         long actualHighAvrg = service.higherSumAverage(sale);
 
         Assertions.assertEquals(expectedHighAvrg, actualHighAvrg);
     }
-
-
 }
 
 
